@@ -4,7 +4,7 @@
     "default": {
       "name": "default",
       "createdDate": "2020-06-22 22:21:08Z",
-      "lastUpdatedDate": "2020-06-22 22:21:08Z"
+      "lastUpdatedDate": "2023-02-27 20:41:08Z"
     }
   },
   "results": {
@@ -85,6 +85,20 @@
       "createdDate": "2020-06-22 22:21:08Z",
       "expirationDate": null,
       "type": "External"
+    },
+    "42e331b9d6383b2bcc54fba1e2d4e2eb9170f70b41feddbbdb2c4bcdc8541ed1": {
+      "signature": "42e331b9d6383b2bcc54fba1e2d4e2eb9170f70b41feddbbdb2c4bcdc8541ed1",
+      "alternativeSignatures": [],
+      "target": "samples\\K8s-cassandra-statefulset.yaml",
+      "memberOf": [
+        "default"
+      ],
+      "tool": "terrascan",
+      "ruleId": "AC_K8S_0051",
+      "justification": null,
+      "createdDate": "2023-02-27 20:41:08Z",
+      "expirationDate": null,
+      "type": null
     }
   }
 }
