@@ -9,7 +9,7 @@ jobs:
 
     # MSDO runs on windows-latest.
     # ubuntu-latest and macos-latest supporting coming soon
-    runs-on: self-hosted
+    runs-on: windows-latest
 
     steps:
 
@@ -28,16 +28,22 @@ jobs:
     - name: Run Microsoft Security DevOps Analysis
       uses: ./
       id: msdo
+      #w
+      with:
+        name: suppressionFileOut
+        path: tst
 
       # Upload alerts to the Security tab
-    - name: Upload alerts to Security tab
-      uses: github/codeql-action/upload-sarif@v2
-      with:
-        sarif_file: ${{ steps.msdo.outputs.sarifFile }}
+#    - name: Upload alerts to Security tab
+#      uses: github/codeql-action/upload-sarif@v2
+#      with:
+#        sarif_file: ${{ steps.msdo.outputs.sarifFile }}
 
       # Upload alerts file as a workflow artifact
     - name: Upload alerts file as a workflow artifact
       uses: actions/upload-artifact@v3
       with:  
         name: alerts
-        path: ${{ steps.msdo.outputs.sarifFile }}
+        path: |
+          ${{ steps.msdo.outputs.sarifFile }}
+          .gdn/tst.gdnsuppress
