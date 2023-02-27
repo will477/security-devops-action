@@ -1,0 +1,9 @@
+﻿{
+  "agentId": 2,
+  "agentName": "scimsecint02",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelines.actions.githubusercontent.com/ePQRXZMARALaODfMJ1q3jFtkazzu3Hrr0Q4qAYlDOfaJznJJfQ",
+  "gitHubUrl": "https://github.com/will477/security-devops-action",
+  "workFolder": "_work"
+}
