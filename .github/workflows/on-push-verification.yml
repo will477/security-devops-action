@@ -30,8 +30,7 @@ jobs:
       id: msdo
       #w
       with:
-        name: suppressionFileOut
-        path: tst
+        tools: 'templateanalyzer, terrascan, credscan'
 
       # Upload alerts to the Security tab
 #    - name: Upload alerts to Security tab
