@@ -26,8 +26,8 @@ jobs:
     - name: Run Microsoft Security DevOps
       uses: microsoft/security-devops-action@v1.6.0
       id: msdo
-      inputs:
-        tools:description: bandit,credscan,eslint,templateanalyzer,terrascan          
+      with:
+        tools: bandit,credscan,eslint,templateanalyzer,terrascan
     - name: Upload alerts file as a workflow artifact
       uses: actions/upload-artifact@v3
       with:  
