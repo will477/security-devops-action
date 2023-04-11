@@ -1,0 +1,25 @@
+{
+  "tools": [
+    {
+      "tool": {
+        "name": "CredScan",
+        "version": "Latest"
+      },
+      "arguments": {
+        "TargetDirectory": "$(Credscan.DefaultTargetDirectory)",
+        "SearcherPath": "",
+        "OutputFile": "",
+        "OutputType": "pre",
+        "BatchSize": "",
+        "SuppressAsError": "true",
+        "SuppressionsPath": "",
+        "Triage": "",
+        "Verbose": "",
+        "ConfigOverrides": "",
+        "DebugMode": "",
+        "FolderSuppression": "",
+        "Help": ""
+      }
+    }
+  ]
+}
