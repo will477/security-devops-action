@@ -24,8 +24,10 @@ jobs:
         azPSVersion: "latest"
         errorActionPreference: continue
     - name: Run Microsoft Security DevOps
-      uses: microsoft/security-devops-action@v1.6.0
+      uses: microsoft/security-devops-action@v1.7.2
       id: msdo
+      with:
+        tools: bandit,credscan,eslint,templateanalyzer,terrascan
     - name: Upload alerts file as a workflow artifact
       uses: actions/upload-artifact@v3
       with:  
