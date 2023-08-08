@@ -10,19 +10,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: |
-          5.0.x
-          6.0.x
-    - name: Azure PowerShell Action
-      uses: Azure/powershell@v1.2.0
-      with:
-        # Specify the Az PowerShell script here.
-        inlineScript: |
-          Get-ChildItem env:* | sort-object name | select-object name, value
-        azPSVersion: "latest"
-        errorActionPreference: continue
+#    - uses: actions/setup-dotnet@v3
+#      with:
+#        dotnet-version: |
+#          5.0.x
+#          6.0.x
+#    - name: Azure PowerShell Action
+#      uses: Azure/powershell@v1.2.0
+#      with:
+#        # Specify the Az PowerShell script here.
+#        inlineScript: |
+#          Get-ChildItem env:* | sort-object name | select-object name, value
+#        azPSVersion: "latest"
+#        errorActionPreference: continue
     - name: Run Microsoft Security DevOps
       uses: microsoft/security-devops-action@v1.7.2
       id: msdo
